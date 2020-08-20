@@ -53,6 +53,7 @@ sources = files(
     'Layouts/Partials/TransformPanel.vala',
     'Layouts/Partials/BorderRadiusPanel.vala',
     'Layouts/Partials/AlignItemsPanel.vala',
+    'Layouts/Partials/GridsPanel.vala',
 
     'Partials/HeaderBarButton.vala',
     'Partials/MenuButton.vala',
