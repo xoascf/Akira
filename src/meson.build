@@ -54,6 +54,7 @@ sources = files(
     'Layouts/Partials/BorderRadiusPanel.vala',
     'Layouts/Partials/AlignItemsPanel.vala',
     'Layouts/Partials/GridsPanel.vala',
+    'Layouts/Partials/GridItem.vala',
 
     'Partials/HeaderBarButton.vala',
     'Partials/MenuButton.vala',
@@ -68,6 +69,7 @@ sources = files(
 
     'Models/BordersItemModel.vala',
     'Models/FillsItemModel.vala',
+    'Models/GridsItemModel.vala',
     'Models/BaseModel.vala',
     'Models/ListModel.vala',
     'Models/ExportModel.vala',
