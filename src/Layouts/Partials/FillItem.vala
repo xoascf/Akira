@@ -108,6 +108,7 @@ public class Akira.Layouts.Partials.FillItem : Gtk.Grid {
         selected_color.can_focus = false;
         selected_color.get_style_context ().add_class ("selected-color");
         selected_color.popover = color_popover;
+        selected_color.tooltip_text = _("Edit color");
 
         var picker_container = new Gtk.Grid ();
         picker_container.margin_end = 10;
@@ -171,6 +172,7 @@ public class Akira.Layouts.Partials.FillItem : Gtk.Grid {
         hidden_button.get_style_context ().add_class ("button-rounded");
         hidden_button.can_focus = false;
         hidden_button.valign = Gtk.Align.CENTER;
+        hidden_button.tooltip_text = _("Toggle visibility");
 
         delete_button = new Gtk.Button ();
         delete_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
@@ -179,6 +181,7 @@ public class Akira.Layouts.Partials.FillItem : Gtk.Grid {
         delete_button.valign = Gtk.Align.CENTER;
         delete_button.add (new Gtk.Image.from_icon_name ("user-trash-symbolic",
             Gtk.IconSize.SMALL_TOOLBAR));
+        delete_button.tooltip_text = _("Delete fill");
 
         color_chooser_widget = new Gtk.ColorChooserWidget ();
         color_chooser_widget.hexpand = true;

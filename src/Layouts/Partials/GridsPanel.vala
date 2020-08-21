@@ -50,7 +50,7 @@
         title_cont.hexpand = true;
         title_cont.get_style_context ().add_class ("option-panel");
 
-        var label = new Gtk.Label (_("Artboard Grids"));
+        var label = new Gtk.Label (_("Grids"));
         label.halign = Gtk.Align.FILL;
         label.xalign = 0;
         label.hexpand = true;
@@ -75,5 +75,87 @@
         grids_list_container.margin_end = 5;
         grids_list_container.selection_mode = Gtk.SelectionMode.NONE;
         grids_list_container.get_style_context ().add_class ("fills-list");
+
+        //  grids_list_container.bind_model (list_model, item => {
+        //      return new Akira.Layouts.Partials.GridItem (window, (Akira.Models.GridsItemModel) item);
+        //  });
+
+        attach (title_cont, 0, 0, 1, 1);
+        attach (grids_list_container, 0, 1, 1, 1);
+        show_all ();
+
+        create_event_bindings ();
     }
+
+    private void create_event_bindings () {
+        toggled = false;
+        window.event_bus.selected_items_changed.connect (on_selected_items_changed);
+
+        //  window.event_bus.fill_deleted.connect (() => {
+        //      add_btn.show ();
+        //      window.main_window.left_sidebar.queue_resize ();
+        //  });
+
+        //  add_btn.clicked.connect (() => {
+        //      var model_item = create_model ();
+        //      list_model.add_item.begin (model_item);
+        //      selected_item.reset_colors ();
+        //      add_btn.hide ();
+        //      window.main_window.left_sidebar.queue_resize ();
+        //  });
+
+        //  // Listen to the model changes when adding/removing items.
+        //  list_model.items_changed.connect ((position, removed, added) => {
+        //      if (selected_item != null) {
+        //          // If an item is still selected, update the has_fill property
+        //          // to TRUE or FALSE based on the model changes.
+
+        //          // This will need to be updated in the future once we're dealing
+        //          // with multiple fill colors, updating to FALSE only if all
+        //          // the fills have been deleted.
+        //          selected_item.has_fill = (added == 1);
+        //      }
+        //  });
+    }
+
+    private void on_selected_items_changed (List<Lib.Models.CanvasItem> selected_items) {
+        if (selected_items.length () == 0) {
+            selected_item = null;
+            //  list_model.clear.begin ();
+            toggled = false;
+            return;
+        }
+
+        bool artboard_selected = false;
+        foreach (Lib.Models.CanvasItem item in selected_items) {
+            if (item is Lib.Models.CanvasArtboard) {
+                artboard_selected = true;
+                break;
+            }
+        }
+
+        toggled = artboard_selected;
+
+        //  if (selected_item == null || selected_item != selected_items.nth_data (0)) {
+        //      toggled = true;
+        //      selected_item = selected_items.nth_data (0);
+
+        //      if (!selected_item.show_fill_panel) {
+        //          toggled = false;
+        //          return;
+        //      }
+
+        //      if (!selected_item.has_fill) {
+        //          add_btn.show ();
+        //          return;
+        //      }
+
+        //      var model_item = create_model ();
+        //      list_model.add_item.begin (model_item);
+        //  }
+    }
+
+    //  private Akira.Models.GridsItemModel create_model () {
+    //      return new Akira.Models.GridsItemModel (selected_item, list_model);
+    //  }
 }
