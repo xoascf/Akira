@@ -89,6 +89,7 @@ public class Akira.Lib.Models.CanvasArtboard : Goo.CanvasItemSimple, Goo.CanvasI
     public new Akira.Lib.Canvas canvas { get; set; }
     public Models.CanvasArtboard? artboard { get; set; }
     public Managers.GhostBoundsManager bounds_manager { get; set; }
+    public GLib.List<Goo.CanvasGrid> grids;
 
     public double relative_x { get; set; }
     public double relative_y { get; set; }

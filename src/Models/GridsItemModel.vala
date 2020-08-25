@@ -20,6 +20,11 @@
  */
 
 public class Akira.Models.GridsItemModel : Models.BaseModel {
+    // Offset X & Y
+
+    // Step X & Y
+
+    // Line color
     public int alpha {
         get {
             return item.fill_alpha;
