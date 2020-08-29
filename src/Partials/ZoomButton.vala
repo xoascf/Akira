@@ -83,9 +83,9 @@ public class Akira.Partials.ZoomButton : Gtk.Grid {
     }
 
     public void zoom_out () {
-        var zoom = int.parse (zoom_default_button.label) - 10;
-        zoom_out_button.sensitive = (zoom > 10);
-        if (zoom < 10) {
+        var zoom = int.parse (zoom_default_button.label) - 1;
+        zoom_out_button.sensitive = (zoom > 2);
+        if (zoom < 2) {
             return;
         }
 
@@ -96,9 +96,9 @@ public class Akira.Partials.ZoomButton : Gtk.Grid {
     }
 
     public void zoom_in () {
-        var zoom = int.parse (zoom_default_button.label) + 10;
-        zoom_in_button.sensitive = (zoom < 1000);
-        if (zoom > 1000) {
+        var zoom = int.parse (zoom_default_button.label) + 1;
+        zoom_in_button.sensitive = (zoom < 5000);
+        if (zoom > 5000) {
             return;
         }
 
