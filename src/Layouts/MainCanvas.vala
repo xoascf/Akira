@@ -58,6 +58,12 @@ public class Akira.Layouts.MainCanvas : Gtk.Grid {
         canvas.set_bounds (0, 0, CANVAS_SIZE, CANVAS_SIZE);
         canvas.set_scale (1.0);
 
+        // Create the Canvas grid.
+        // var grid = new Goo.CanvasGrid (null, 0, 0, CANVAS_SIZE, CANVAS_SIZE, 1, 1, 0, 0);
+        // grid.horz_grid_line_width = grid.vert_grid_line_width = 0.02;
+        // grid.visibility = Goo.CanvasItemVisibility.HIDDEN;
+        // grid.set ("parent", canvas.get_root_item ());
+
         canvas.canvas_moved.connect ((event_x, event_y) => {
             // Move scroll window according to normalized mouse delta
             // relative to the scroll window, so with Canvas' pixel
