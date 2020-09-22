@@ -97,10 +97,7 @@ public interface Akira.Lib.Models.CanvasItem : Goo.CanvasItemSimple, Goo.CanvasI
         remove ();
     }
 
-    public static string create_item_id (Models.CanvasItem item) {
-        string[] type_slug_tokens = item.item_type.to_string ().split ("_");
-        string type_slug = type_slug_tokens[type_slug_tokens.length - 1];
-
+    public static string create_item_id (Models.CanvasItem item, string item_name) {
         // Make sure the initial ID is the current count of the total amount
         // of items with the same item type in the same artboard.
         int count = 0;
@@ -115,16 +112,7 @@ public interface Akira.Lib.Models.CanvasItem : Goo.CanvasItemSimple, Goo.CanvasI
             }
         }
 
-        return "%s %d".printf (capitalize (type_slug.down ()), count);
-    }
-
-    public static string capitalize (string s) {
-        string back = s;
-        if (s.get_char (0).islower ()) {
-            back = s.get_char (0).toupper ().to_string () + s.substring (1);
-        }
-
-        return back;
+        return item_name.printf (count);
     }
 
     public static void init_item (Goo.CanvasItem item) {

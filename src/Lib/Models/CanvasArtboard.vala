@@ -106,7 +106,7 @@ public class Akira.Lib.Models.CanvasArtboard : Goo.CanvasItemSimple, Goo.CanvasI
         artboard = null;
 
         item_type = Models.CanvasItemType.ARTBOARD;
-        id = Models.CanvasItem.create_item_id (this);
+        id = Models.CanvasItem.create_item_id (this, _("Artboard %d"));
         Models.CanvasItem.init_item (this);
 
         width = 1;

@@ -88,7 +88,7 @@ public class Akira.Lib.Models.CanvasEllipse : Goo.CanvasEllipse, Models.CanvasIt
         canvas = parent.get_canvas () as Akira.Lib.Canvas;
 
         item_type = Models.CanvasItemType.ELLIPSE;
-        id = Models.CanvasItem.create_item_id (this);
+        id = Models.CanvasItem.create_item_id (this, _("Ellipse %d"));
         Models.CanvasItem.init_item (this);
         if (artboard != null) {
             connect_to_artboard ();

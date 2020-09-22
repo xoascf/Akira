@@ -256,7 +256,7 @@ public class Akira.Lib.Managers.ItemsManager : Object {
         bool loaded
     ) {
         return new Models.CanvasText (
-            "Akira is awesome :)",
+            _("Akira is awesome :)"),
             Utils.AffineTransform.fix_size (x),
             Utils.AffineTransform.fix_size (y),
             200,

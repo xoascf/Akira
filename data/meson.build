@@ -38,7 +38,7 @@ desktop_file = i18n.merge_file(
         configuration: desktop_file_conf
     ),
     output: application_id + '.desktop',
-    po_dir: join_paths(meson.source_root(), 'po'),
+    po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     type: 'desktop',
     install: true,
     install_dir: join_paths(akira_datadir, 'applications')
@@ -64,7 +64,7 @@ appdata_file = i18n.merge_file(
         configuration: appdata_file_conf
     ),
     output: application_id + '.appdata.xml',
-    po_dir: join_paths(meson.source_root(), 'po'),
+    po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     install: true,
     install_dir: join_paths(akira_datadir, 'metainfo')
 )
@@ -77,8 +77,12 @@ if appstream_util.found()
   )
 endif
 
-install_data(
-    meson.project_name() + '.mime.xml',
+mimetype_file = i18n.merge_file(
+    input: meson.project_name() + '.mime.xml.in',
+    output: application_id + '.mime.xml',
+    po_dir: join_paths(meson.source_root(), 'po', 'extra'),
+    data_dirs: join_paths(meson.source_root(), 'gettext'),
+    install: true,
     install_dir: join_paths(akira_datadir, 'mime', 'packages')
 )
 subdir('schemas')

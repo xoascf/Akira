@@ -1,0 +1,419 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-20 01:54-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: codedracula <62944284+codedracula4ec@users.noreply.github."
+"com>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:5
+msgid "The currently installed version."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:6
+msgid ""
+"The currently installed version of Akira, updated only after the user "
+"launched the app. This is used to know when to trigger the Release Dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:11
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:12
+msgid "The saved horizontal position of the window."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:17
+msgid "The vertical position width of the window."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:18
+msgid "The saved vertical position of the window."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:23
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:24
+msgid "The saved width of the window."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:29
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:30
+msgid "The saved height of the window."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:35
+msgid "The saved width of the right panel."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:36
+msgid ""
+"The saved width of the right panel containing the MainCanvas and "
+"RightSidebar."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:41
+msgid "The saved width of the left panel."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:42
+msgid ""
+"The saved width of the left panel. Must be greater than 220, or it will not "
+"take effect."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:47
+#, fuzzy
+msgid "Use dark theme"
+msgstr "Usar tema escuro:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:48
+msgid "Switch between Light and Dark theme."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:53
+#, fuzzy
+msgid "Show button labels"
+msgstr "Mostrar legendas de botões:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:54
+msgid "Show or Hide the button labels to slim the UI."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:59
+#, fuzzy
+msgid "Use Symbolic Icons"
+msgstr "Usar ícones monocromáticos:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:60
+msgid "Allow user to choose between normal and symbolic icons in HeaderBar."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:65
+#, fuzzy
+msgid "Invert Panels Order"
+msgstr "Inverter ordem dos painéis:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:66
+msgid "Allow user to choose between default and inverted panels order."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:71
+#, fuzzy
+msgid "Default Shape Color."
+msgstr "Cores padrão"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:72
+msgid "The default color of a newly created shape."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:77
+msgid "Add Border on Shape Creation"
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:78
+#, fuzzy
+msgid "Enable the addition of the border style when creating a new shape."
+msgstr "Define o estilo padrão a ser usado para criar uma nova forma."
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:83
+#, fuzzy
+msgid "Default Border Width."
+msgstr "Largura da borda:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:84
+msgid "The default width of the border for a newly created shape."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:88
+#, fuzzy
+msgid "Default Border Color."
+msgstr "Cores padrão"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:89
+msgid "The default color of the border for a newly created shape."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:94
+#, fuzzy
+msgid "Auto Reopen latest file"
+msgstr "Reabrir automaticamente arquivo mais recente:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:95
+#, fuzzy
+msgid "Automatically reopen the latest file on startup."
+msgstr "Reabrir automaticamente arquivo mais recente:"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:100
+#, fuzzy
+msgid "Recently opened files"
+msgstr "Não há arquivos recentes!"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:101
+#, fuzzy
+msgid "Keep track of the 10 most recently opened files."
+msgstr "Não há nenhum terceiro arquivo recente!"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:106
+#, fuzzy
+msgid "Default export folder."
+msgstr "Cores padrão"
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:107
+msgid "The default folder where exported images will be saved."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:112
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:113
+msgid "The saved width of the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:118
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:119
+msgid "The saved height of the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:124
+msgid "The saved position of the export left panel."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:125
+msgid "The saved position of the left panel in the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:130
+msgid "The quality value for exporting JPG images."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:131
+msgid "The quality value for exporting JPG images in the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:136
+msgid "The compression value for exporting PNG images."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:137
+msgid "The compression value for exporting PNG images in the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:142
+msgid "The format type for exporting images."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:143
+msgid "The format type for exporting images in the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:148
+msgid "The scaled resolution for exporting images."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:149
+msgid "The scaled resolution for exporting images in the export dialog."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:154
+msgid "The alpha setting for exporting PNG images."
+msgstr ""
+
+#: data/schemas/com.github.akiraux.akira.gschema.xml.in.in:155
+msgid "The alpha setting for exporting PNG images in the export dialog."
+msgstr ""
+
+#: data/com.github.akiraux.akira.mime.xml.in:4
+msgid "Akira Design File"
+msgstr ""
+
+#: data/com.github.akiraux.akira.desktop.in.in:3
+#: data/com.github.akiraux.akira.appdata.xml.in.in:7
+#, fuzzy
+msgid "Akira"
+msgstr "Arquivos Akira"
+
+#: data/com.github.akiraux.akira.desktop.in.in:4
+#, fuzzy
+msgid "Akira App"
+msgstr "Arquivos Akira"
+
+#: data/com.github.akiraux.akira.desktop.in.in:5
+#: data/com.github.akiraux.akira.appdata.xml.in.in:8
+msgid "The Linux Design Tool"
+msgstr "A ferramenta de design para Linux"
+
+#: data/com.github.akiraux.akira.desktop.in.in:8
+msgid "@ICON_NAME@"
+msgstr ""
+
+#: data/com.github.akiraux.akira.desktop.in.in:11
+msgid "Design;Web;UX;UI;Graphics;"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:10
+msgid "A modern UX Design Application for UI and UX Designers"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:13
+#, fuzzy
+msgid ""
+"⚠ WARNING! Akira is still under development and not ready for production. "
+"Missing features, random bugs, and black holes opening in your kitchen are "
+"to be expected."
+msgstr ""
+"ATENÇÃO!\n"
+"Akira está sob desenvolvimento e não está pronto para produção. É de se "
+"esperar o mau funcionamento e a inexistência de algumas funcionalidades."
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:15
+msgid ""
+"Akira is a native Linux Design application built in Vala and Gtk. Akira "
+"focuses on offering a modern and fast approach to UI and UX Design, mainly "
+"targeting web and graphic designers. The main goal is to offer a valid and "
+"professional solution for designers who want to use Linux as their main OS."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:18
+msgid "Features Include:"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:22
+msgid "Fully vector canvas for infinite resizing without quality loss"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:23
+msgid "Smart option panel that shows the editable features of a selected item"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:24
+msgid "Layers panel with easy Drag and Drop and smart ordering"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:25
+msgid "Create Artboards to better organize your design iterations and views"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:26
+msgid "Control the size and quality of exported images"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:27
+msgid "Customizable icon set"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:28
+msgid "And so much more…"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:37
+msgid "New Features and Bug Fixes"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:39
+msgid "New color picker for Fills and Borders."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:40
+msgid "Zooming with mouse wheel follows the position of the cursor."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:41
+msgid "Fix loading Artboards background color when opening a file."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:42
+msgid "Fix numbering of newly created items."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:43
+msgid "Fix Gtk-CRITICAL warning when opening the Export Dialog."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:44
+msgid "Fix flipping items inside Artboards."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:45
+msgid "Fix crash when dropping flipped items inside Artboards."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:46
+msgid "General code improvements and optimization."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:52
+msgid "Bug fixes and Artboards improvements"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:54
+msgid "Control Artboards background color."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:55
+msgid "Hide and Lock Artboards from the Layers panel."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:56
+msgid ""
+"Items inside Artboards are masked when extending outside the edges of the "
+"Artboard."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:57
+msgid "Fix items reordering with the layers panel drag and drop."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:58
+msgid "Fix random segfault at startup while setting accelerators."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:59
+msgid "Updated goocanvas vapi."
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:65
+#: data/com.github.akiraux.akira.appdata.xml.in.in:77
+#: data/com.github.akiraux.akira.appdata.xml.in.in:89
+msgid "🚀 Experimental Alpha Release, say Hi to Akira!"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:67
+#: data/com.github.akiraux.akira.appdata.xml.in.in:79
+#: data/com.github.akiraux.akira.appdata.xml.in.in:91
+msgid "Create Artboards and basic shapes"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:68
+#: data/com.github.akiraux.akira.appdata.xml.in.in:80
+#: data/com.github.akiraux.akira.appdata.xml.in.in:92
+msgid "Manage the fill and border properties of shapes"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:69
+#: data/com.github.akiraux.akira.appdata.xml.in.in:81
+#: data/com.github.akiraux.akira.appdata.xml.in.in:93
+#, fuzzy
+msgid "Import images"
+msgstr "Exportando imagens…"
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:70
+#: data/com.github.akiraux.akira.appdata.xml.in.in:82
+#: data/com.github.akiraux.akira.appdata.xml.in.in:94
+msgid "Export custom areas, selections, and artboards"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:71
+#: data/com.github.akiraux.akira.appdata.xml.in.in:83
+#: data/com.github.akiraux.akira.appdata.xml.in.in:95
+msgid ""
+"So many crashes and missing features you wouldn't believe, but hey, this is "
+"an experimental alpha…"
+msgstr ""
+
+#: data/com.github.akiraux.akira.appdata.xml.in.in:115
+msgid "Alessandro Castellani"
+msgstr ""
